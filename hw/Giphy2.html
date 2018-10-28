@@ -41,8 +41,8 @@
 
       // displayvehicleeInfo function re-renders the HTML to display the appropriate content
       function displayVehicleInfo() {
-
-        var x = $(this).data("search");
+        console.log($(this).data("name"));
+        var x = $(this).data("name");
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + x + "&api_key=OKuOOBJ8IQ2FkaJLhXfa4jyHap18fBXz&limit=10";
         console.log(queryURL);
         // Creating an AJAX call for the specific vehicle button being clicked
